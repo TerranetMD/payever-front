@@ -1,0 +1,43 @@
+$logo-padding: $spacer/2 !default;
+
+.app__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.app__logo {
+  flex-shrink: 1;
+  user-select: none;
+
+  a {
+    display: block;
+    text-decoration: none;
+    width: 246px;
+    height: 90px;
+    transform: translate3d(34px, 0, 0);
+    transition: transform .3s;
+    perspective: 800px;
+    outline: none;
+  }
+
+  .app__logo-close {
+    opacity: 0;
+    transform-style: preserve-3d;
+    transform: translate3d(192px, 36px, 0) rotateY(-75deg);
+    transition: transform .3s, opacity .3s;
+  }
+}
+
+.app__logo--closable {
+  a {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .app__logo-close {
+    transform: translate3d(192px, 36px, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}

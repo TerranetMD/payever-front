@@ -1,0 +1,21 @@
+{{#if prev}}
+  <button class="btn-pager btn-pager--start" data-page="{{prev}}" type="button">
+    <span class="btn-pager__content btn-pager__content--start">Previous pictures</span>
+    <span class="btn-pager__content btn-pager__content--loading">
+      <svg x="0px" y="0px" width="42px" height="21px">
+        <use xlink:href="#preloader">
+      </svg>
+    </span>
+  </button>
+{{/if}}
+<div class="pictures"></div>
+{{#if next}}
+  <button class="btn-pager btn-pager--start" data-page="{{next}}" type="button">
+    <span class="btn-pager__content btn-pager__content--start">Next Pictures</span>
+    <span class="btn-pager__content btn-pager__content--loading">
+      <svg x="0px" y="0px" width="42px" height="21px">
+        <use xlink:href="#preloader">
+      </svg>
+    </span>
+  </button>
+{{/if}}

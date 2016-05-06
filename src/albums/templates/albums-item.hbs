@@ -1,0 +1,20 @@
+<div class="album__preview">
+  <div class="album__panel">
+    {{#each covers.main}}
+      <div class="album__picture album__picture--busy">
+        <img src="{{../pixel}}" data-src="{{thumbnail}}" alt=""/>
+      </div>
+    {{/each}}
+  </div>
+  <div class="album__panel">
+    {{#each covers.rest}}
+      <div class="album__picture album__picture--busy">
+        <img src="{{../pixel}}" data-src="{{thumbnail}}" alt=""/>
+      </div>
+    {{/each}}
+    <div class="album__picture album__picture--count">
+      +{{count}}
+    </div>
+  </div>
+</div>
+<h5 class="album__title">{{author}}</h4>
