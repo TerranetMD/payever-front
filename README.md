@@ -10,8 +10,8 @@
 
 `npm run build`
 
-copy `app.js` into the `web/app.js`
-copy `assets` folder to `web/assets`
+copy `build/app.js` into the `web/app.js`
+copy `build/assets` folder to `web/assets`
 
 
 ### Start project in Dev mode
